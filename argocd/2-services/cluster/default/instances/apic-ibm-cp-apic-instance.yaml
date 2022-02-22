@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: apic-ibm-cp-apic-instance
+spec:
+  destination:
+    namespace: apic
+    server: https://kubernetes.default.svc
+  project: 2-services
+  source:
+    path: payload/2-services/namespace/apic/ibm-cp-apic-instance
+    repoURL: https://github.com/divyakamathorg/gitops-test-cp4i-instance
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []

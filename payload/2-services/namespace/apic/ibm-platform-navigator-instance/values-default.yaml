@@ -1,0 +1,13 @@
+"ibm-platform-navigator-instance":
+  "ibmplatformnavigator":
+    "name": "integration-navigator"
+    "spec":
+      "license":
+        "accept": true
+        "license": "L-RJON-BUVMQX"
+      "mqDashboard": true
+      "replicas": 2
+      "storage":
+        "class": "portworx-rwx-gp-sc"
+      "version": ""
+
